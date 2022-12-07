@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Source Code Pro",
+}
+
+body {
+  background: #171717;
+
+}
+
+@layer components {
+  .info {
+    color: transparent;
+    -webkit-text-stroke-width: 0.06rem;
+    -webkit-text-stroke-color: white;
+  }
+
+  .jobs {
+    color: transparent;
+    -webkit-text-stroke-width: 0.06rem;
+    -webkit-text-stroke-color: #DD9F00;
+  }
+}
