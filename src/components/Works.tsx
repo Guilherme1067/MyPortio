@@ -3,7 +3,7 @@ import project2 from '/assets/project2.png'
 
 export function Works() {
   return (
-    <div id="#jobs" className='flex flex-col gap-12 absolute top-[1048px] left-[425px] '>
+    <div id="#jobs" className='flex flex-col gap-12 absolute top-[1048px] left-[425px] md:left-[271px] '>
       <p className='jobs font-extrabold text-2xl'>SELECTED WORK</p>
       <div className="relative w-[628px] h-[455px] border-[0.5px]  border-border-gray ">
         <div className=''>
