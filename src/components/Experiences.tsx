@@ -1,3 +1,9 @@
+import { ReactNode } from "react"
+
+interface ExperienceContainerProps {
+  children: ReactNode;
+}
+
 const jobs = [{
   name: "AVENUE",
   title: "Front End Engineer",
@@ -27,7 +33,8 @@ const jobs = [{
 
 function JobsInfo() {
   return (
-    <div  >
+    <div className="flex flex-col gap-10" >
+
       {jobs.map(job => {
         return (
           <div className="flex border-solid border-b-[0.5px] border-white items-center border-border-gray pb-10  gap-20 ">
@@ -39,25 +46,35 @@ function JobsInfo() {
           </div>
         )
       })}
-
     </div >
+  )
+}
+
+function ExperiencesContainer({ children }: ExperienceContainerProps) {
+  return (
+    <div id="Experiences" className=" bg-black-dark pt-16 pl-44 ">
+      <div className=" flex-col flex">
+        <div className=" flex justify-between pr-44">
+          {children}
+        </div>
+      </div>
+    </div>
+  )
+}
+
+function ExperienceDescription() {
+  return (
+    <div className="flex gap-2 flex-col">
+      <h1 className="jobs text-3xl font-bold">EXPERIENCES</h1>
+      <p className="text-xl text-white">since 2019, I have helped <br /> many clients build great <br />websites in several<br /> market fields. </p>
+    </div>
   )
 }
 export function Experiences() {
   return (
-    <div id="experiences" className=" bg-black-dark pt-16 pl-44 ">
-      <div className=" flex-col flex">
-        <div className=" flex justify-between pr-44">
-          <div className="flex gap-2 flex-col">
-            <h1 className="jobs text-3xl font-bold">EXPERIENCES</h1>
-            <p className="text-xl text-white">since 2019, I have helped <br /> many clients build great <br />websites in several<br /> market fields. </p>
-          </div>
-          <div className="flex flex-col gap-10" >
-            <JobsInfo />
-          </div>
-        </div>
-      </div>
-    </div>
-
+    <ExperiencesContainer>
+      <ExperienceDescription />
+      <JobsInfo />
+    </ExperiencesContainer>
   )
 }
