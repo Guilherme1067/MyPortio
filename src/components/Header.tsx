@@ -11,8 +11,9 @@ export function Header() {
       </div>
       <nav className="text-base text-white flex gap-12">
         <a href="#info">About</a>
-        <a href="#jobs">Experiences</a>
-        <a href="#">Contact me</a>
+        <a href="#works">Works</a>
+        <a href="#experiences">Experiences</a>
+        <a href="#contact">Contact me</a>
       </nav>
 
       <ul className="flex gap-6">

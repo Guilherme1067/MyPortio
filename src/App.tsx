@@ -1,3 +1,4 @@
+import { ContactMe } from "./components/Contact"
 import { Experiences } from "./components/Experiences"
 import { Header } from "./components/Header"
 import { Info } from "./components/Info"
@@ -12,6 +13,8 @@ function App() {
       <Info />
       <Works />
       <Experiences />
+      <ContactMe />
+
     </div>
   )
 }

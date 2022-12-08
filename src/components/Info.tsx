@@ -1,17 +1,20 @@
 import mySelf from '../assets/itsme.jpg'
 export function Info() {
   return (
-    <main id="info" className=' flex items-center justify-center top-[-513px] relative'>
-      <div className=' w-[1500px] h-[1500px] border-[0.5px] border-solid border-border-gray rounded-full flex items-center justify-center'>
-        <div className=' w-[900px] h-[900px] border-[0.5px] border-solid border-border-gray rounded-full flex items-center justify-center'>
+    <main id="info" className=' flex items-center justify-center '>
+      <div className=' border-solid border-border-gray rounded-full flex items-center justify-center'>
+        <div className='flex items-center justify-center flex-col'>
           <img className="w-[418px] h-[418px] rounded-full " src={mySelf} />
-          <div className=' flex items-center flex-col '>
-            <p className="absolute info text-[7.5rem] font-extrabold top-[846px] left-[347px]  after:content-['DEVELOPER'] after:text-white">FRONTEND</p>
-            <div className=' w-[628px] absolute top-[900px]'>
-              <p className='absolute left-[-421px] top-[135px] text-white'>Hello, I am a front-end developer and problem solver <br /> with four years of experience working from Brazil.
+          <p className=" absolute top-[375px] info text-[7.5rem] font-extrabold after:content-['DEVELOPER'] after:text-white">FRONTEND</p>
+
+          <div className=' pt-14 flex items-center flex-col '>
+            <div className=' flex gap-60 '>
+
+
+              <p className=' text-white '>Hello, I am a front-end developer and problem solver <br /> with four years of experience working from Brazil.
                 I <br /> aim to create high quality, responsive websites and <br />plataforms that offers the best experience. </p>
 
-              <div className='flex gap-16 absolute left-[-421px] top-[283px]'>
+              <div className='flex gap-16 '>
                 <div className='flex flex-col gap-4'>
                   <p className='text-yellow font-bold'>EDUCATION</p>
                   <p className='text-white'>Computer Science</p>
