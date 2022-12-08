@@ -13,15 +13,13 @@ type ProjectBox = {
 }
 function RightSideProjectBox({ src, number, name, description, link }: ProjectBox) {
   return (
-    <div className="relative w-[628px] h-[455px] md:w-[530px] md:h-[403px] border-[0.5px]  border-border-gray left-[50%]">
-      <div className=''>
-        <img className='absolute top-[40px] right-[90px]' src={src} />
-        <span className='absolute right-[48px] top-[48px] font-extrabold text-5xl jobs'>{number}</span>
-        <div className='relative top-[128px] md:top-[103px] right-[336px] flex flex-col gap-2'>
-          <p className='font-bold text-[40px] text-white max-w-[360px]'>{name}</p>
-          <span className='text-base text-white'>{description}</span>
-          <a href="" className='text-yellow text-base font-medium'>See project</a>
-        </div>
+    <div className="hover:animate-pulse mb-12 relative w-[628px] h-[455px] md:w-[530px] md:h-[403px] border-[0.5px]  border-border-gray md:left-[50%]">
+      <img className='absolute top-[40px] md:right-[90px]' src={src} />
+      <span className='absolute right-[60px] top-[48px] font-extrabold text-5xl jobs'>{number}</span>
+      <div className='relative top-[348px] left-[84px]top-[128px] md:top-[103px] right-[336px] flex flex-col gap-2'>
+        <p className='font-bold text-[40px] text-white max-w-[360px]'>{name}</p>
+        <span className='text-base text-white'>{description}</span>
+        <a href="" className='text-yellow text-base font-medium'>See project</a>
       </div>
     </div>
   )
@@ -29,15 +27,13 @@ function RightSideProjectBox({ src, number, name, description, link }: ProjectBo
 
 function LeftSideProjectBox({ src, number, name, description, link }: ProjectBox) {
   return (
-    <div className="relative w-[628px] h-[455px] md:w-[530px] md:h-[403px] border-[0.5px]  border-border-gray ">
-      <div className=''>
-        <img className='absolute top-[40px] left-[90px]' src={notebook} />
-        <span className='absolute left-[48px] top-[48px] font-extrabold text-5xl jobs'>01</span>
-        <div className='relative top-[128px] left-[594px] md:left-[498px] md:top-[100px]  flex flex-col gap-2'>
-          <p className='font-bold text-[40px] text-white '>PROJECT NAME IN <br /> ABOUT TWO LINES</p>
-          <span className='text-base text-white '>Here comes a brief description about what was done during the project in three lines at maximum</span>
-          <a href="#" className='text-yellow text-base font-medium'>See project</a>
-        </div>
+    <div className="hover:animate-pulse relative w-[628px] h-[455px] md:w-[530px] md:h-[403px] border-[0.5px]  border-border-gray ">
+      <img className='absolute top-[40px] left-[90px]' src={src} />
+      <span className='absolute left-[60px] top-[48px] font-extrabold text-5xl jobs'>{number}</span>
+      <div className='relative top-[348px] left-[84px] md:left-[498px] md:top-[100px]  flex flex-col gap-2'>
+        <p className='font-bold text-[40px] text-white '>{name}</p>
+        <span className='text-base text-white '>{description}</span>
+        <a href="#" className='text-yellow text-base font-medium'>See project</a>
       </div>
     </div>
 
@@ -47,12 +43,12 @@ function LeftSideProjectBox({ src, number, name, description, link }: ProjectBox
 
 export function Works() {
   return (
-    <div id="works" className='flex flex-col gap-12 pt-20 px-44 '>
+    <div id="works" className='flex flex-col gap-12 md:pt-20 md:px-44 sm:p-0  '>
       <p className='jobs font-extrabold text-2xl'>SELECTED WORK</p>
-      <LeftSideProjectBox src={project2} number="1" name="PROJECT NAME IN ABOUT TWO LINES" description='Here comes a brief description about what was done during the project in three lines at maximum' />
-      <RightSideProjectBox src={project2} number="2" name="PROJECT NAME IN ABOUT TWO LINES" description='Here comes a brief description about what was done during the project in three lines at maximum' />
-      <LeftSideProjectBox src={project2} number="3" name="PROJECT NAME IN ABOUT TWO LINES" description='Here comes a brief description about what was done during the project in three lines at maximum' />
-      <RightSideProjectBox src={project2} number="4" name="PROJECT NAME IN ABOUT TWO LINES" description='Here comes a brief description about what was done during the project in three lines at maximum' />
+      <LeftSideProjectBox src={project2} number="01" name="PROJECT NAME IN ABOUT TWO LINES" description='Here comes a brief description about what was done during the project in three lines at maximum' />
+      <RightSideProjectBox src={notebook} number="02" name="PROJECT NAME IN ABOUT TWO LINES" description='Here comes a brief description about what was done during the project in three lines at maximum' />
+      <LeftSideProjectBox src={project2} number="03" name="PROJECT NAME IN ABOUT TWO LINES" description='Here comes a brief description about what was done during the project in three lines at maximum' />
+      <RightSideProjectBox src={notebook} number="04" name="PROJECT NAME IN ABOUT TWO LINES" description='Here comes a brief description about what was done during the project in three lines at maximum' />
     </div>
 
   )

@@ -16,7 +16,18 @@ module.exports = {
       gray: '#E5E5E5',
       'border-gray': 'rgba(255, 255, 255, 0.3)'
     },
-    extend: {},
+    extend: {
+      keyframes: {
+        show: {
+          '0%': {opacity: 0},
+          '100%': {opacity: 1},
+
+        }
+      },
+      animation: {
+        show: 'show 4s ease-in-out forwards',
+      }
+    },
   },
   plugins: [
   ],

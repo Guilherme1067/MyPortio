@@ -10,10 +10,10 @@ export function Header() {
         <p className="text-yellow font-bold text-base">REIS</p>
       </div>
       <nav className="text-base text-white flex gap-12">
-        <a href="#info">About</a>
-        <a href="#works">Works</a>
-        <a href="#experiences">Experiences</a>
-        <a href="#contact">Contact me</a>
+        <a className='hover:animate-pulse' href="#info">About</a>
+        <a className='hover:animate-pulse' href="#works">Works</a>
+        <a className='hover:animate-pulse' href="#experiences">Experiences</a>
+        <a className='hover:animate-pulse' href="#contact">Contact me</a>
       </nav>
 
       <ul className="flex gap-6">
