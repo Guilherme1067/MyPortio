@@ -46,7 +46,7 @@ function LeftSideProjectBox({ src, number, name, description, link }: ProjectBox
 
 export function Works() {
   return (
-    <div id="#jobs" className='flex flex-col gap-12 absolute top-[1048px] lg:left-[425px] md:left-[156px]  '>
+    <div id="#jobs" className='flex flex-col gap-12 absolute top-[1048px] left-[425px] md:left-[156px]  '>
       <p className='jobs font-extrabold text-2xl'>SELECTED WORK</p>
 
       <LeftSideProjectBox src={notebook} number="01" name="PROJECT NAME IN ABOUT TWO LINES" description='Here comes a brief description about what was done during the project in three lines at maximum' />
