@@ -2,8 +2,8 @@
 export function Experiences() {
   return (
     <div id="experiences" className=" bg-black-dark pt-16 pl-44 ">
-      <div className=" flex-col flex gap-[184px] ">
-        <div className=" flex gap-[400px] ">
+      <div className=" flex-col flex">
+        <div className=" flex justify-between pr-44">
           <div className="flex gap-2 flex-col">
             <h1 className="jobs text-3xl font-bold">EXPERIENCES</h1>
             <p className="text-xl text-white">since 2019, I have helped <br /> many clients build great <br />websites in several<br /> market fields. </p>
