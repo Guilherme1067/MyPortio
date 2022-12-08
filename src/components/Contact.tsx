@@ -8,10 +8,10 @@ export function ContactMe() {
         <p className=" text-white">Have a project in mind? <br />Reach out to me anytime.</p>
       </div >
 
-      <div className="flex gap-[705px]">
+      <div className="flex items-center justify-between">
         <p className=" text-white text-3xl" >guilherme1067@hotmail.com</p>
 
-        <div className='flex gap-3 items-center cursor-pointer'>
+        <div className='flex gap-3 items-center cursor-pointer pr-40'>
           <a href="#info" className="text-yellow font-semibold">Back to the top</a>
           <img className='w-4 h-4 cursor-pointer' src={BackUpIcon} />
         </div>
