@@ -26,10 +26,10 @@ function ContactMeRightSide() {
   return (
     <div className="flex items-center justify-between">
       <p className=" text-white text-3xl" >guilherme1067@hotmail.com</p>
-      <div className='flex gap-3 items-center cursor-pointer pr-40'>
-        <a href="#About" className="text-yellow font-semibold">Back to the top</a>
-        <img className='w-4 h-4 cursor-pointer' src={BackUpIcon} />
-      </div>
+      <a href="#About" className="text-yellow  hover:animate-pulse font-semibold flex gap-3 items-center cursor-pointer pr-40" title="Back to the Top(Icon to go back up to the first section of the page)" >
+        Back to the top
+        <img className='w-4 h-4 cursor-pointer' src={BackUpIcon} alt="Icon to go back to the first page section" />
+      </a>
     </div>
   )
 }
@@ -39,7 +39,6 @@ export function ContactMe() {
     <ContactMeContainer>
       <ContactMeLeftSide />
       <ContactMeRightSide />
-
     </ContactMeContainer>
   )
 }

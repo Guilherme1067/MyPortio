@@ -7,7 +7,7 @@ interface InfoContainerProps {
 
 function InfoContainer({ children }: InfoContainerProps) {
   return (<main id="About" className=' flex items-center justify-center '>
-    <div className=' border-solid border-border-gray rounded-full flex items-center justify-center'>
+    <div className='rounded-full flex items-center justify-center'>
       <div className='flex items-center justify-center flex-col'>
 
         {children}
@@ -20,8 +20,8 @@ function InfoContainer({ children }: InfoContainerProps) {
 function PhotoAndTitle() {
   return (
     <>
-      <img className="md:w-[418px] md:h-[418px] w-[220px] h-[220px] rounded-full " src={mySelf} />
-      <p className=" absolute top-[375px] info text-[48px] md:text-[7.5rem] font-extrabold after:content-['DEVELOPER'] after:text-white">FRONTEND</p>
+      <img className="md:w-[418px] md:h-[418px] w-[220px] h-[220px] rounded-full mt-7" src={mySelf} />
+      <p className=" absolute top-[420px] info text-[48px] md:text-[7.5rem] font-extrabold after:content-['DEVELOPER'] after:text-white">FRONTEND</p>
     </>
   )
 }
