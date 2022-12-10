@@ -9,6 +9,10 @@ interface HeaderContainerProps {
   children: ReactNode;
 }
 
+interface MobileMenuProps {
+  setMenuStatus: (isOpen: boolean) => void;
+}
+
 const arrayOfLinks = ["About", "Works", "Experiences", "Contact me"]
 function NavLinks() {
   return (
@@ -34,11 +38,13 @@ function HeaderLeftSide() {
   )
 }
 
-function HeaderSocialMediaIcons() {
+
+
+function HeaderSocialMediaIcons({ setMenuStatus }: MobileMenuProps) {
   return (
     <ul className="flex items-center sm:flex sm:gap-6">
       <li className='group '>
-        <img className="inline sm:hidden cursor-pointer" src={menu} />
+        <img onClick={() => setMenuStatus(true)} className="inline sm:hidden cursor-pointer" src={menu} />
         <a title="Link to my linkeding perfil(external link)" className="hidden md:inline" href="https://www.linkedin.com/in/guireiss/" target="_blank">
           <img src={linkedinIcon} alt="linkedin logo" />
         </a>
@@ -57,12 +63,15 @@ function HeaderContainer({ children }: HeaderContainerProps) {
   )
 }
 
-export function Header() {
+export function Header({ setMenuStatus }: MobileMenuProps) {
+
   return (
-    <HeaderContainer>
-      <HeaderLeftSide />
-      <NavLinks />
-      <HeaderSocialMediaIcons />
-    </HeaderContainer>
+    <>
+      <HeaderContainer>
+        <HeaderLeftSide />
+        <NavLinks />
+        <HeaderSocialMediaIcons setMenuStatus={setMenuStatus} />
+      </HeaderContainer>
+    </>
   )
 }
