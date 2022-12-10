@@ -23,7 +23,7 @@ function PhotoAndTitle() {
   return (
     <>
       <img className="sm:w-[418px] sm:h-[418px] w-[220px] h-[220px] rounded-full mt-7" src={mySelf} />
-      <p className=" absolute top-[270px] sm:top-[420px]  info text-[48px] sm:text-[7.5rem] font-extrabold after:flex sm:flex after:content-['DEVELOPER'] after:text-white leading-10 md:leading-normal">FRONTEND</p>
+      <p translate="no" className="  absolute top-[270px] sm:top-[420px]  info text-[48px] sm:text-[7.5rem] font-extrabold after:flex sm:flex after:content-['DEVELOPER'] after:text-white leading-10 md:leading-normal">FRONTEND</p>
     </>
   )
 }

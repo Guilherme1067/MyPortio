@@ -40,8 +40,8 @@ function JobsInfo() {
           <div key={job.name} className="flex flex-col gap-6 pb-6 md:flex-row border-solid border-b-[0.5px] border-white md:items-center border-border-gray md:pb-10 md:gap-20 ">
             <span className="text-white text-sm sm:text-base">{job.period}</span>
             <div >
-              <p className="text-white text-[28px]  sm:text-[40px]">{job.name}</p>
-              <span className="text-white text-sm sm:text-base">{job.title}</span>
+              <p translate="no" className="text-white text-[28px]  sm:text-[40px]">{job.name}</p>
+              <span translate="no" className="text-white text-sm sm:text-base">{job.title}</span>
             </div>
           </div>
         )
