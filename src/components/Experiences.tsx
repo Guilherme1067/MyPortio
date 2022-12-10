@@ -66,7 +66,7 @@ function ExperienceDescription() {
   return (
     <div className="flex gap-2 flex-col pt-16 sm:pt-24">
       <h1 className="jobs text-[28px] sm:text-3xl font-bold ">EXPERIENCES</h1>
-      <p className=" text-sm sm:text-xl text-white md:max-w-[300px] pb-8 ">since 2019, I have helped many clients build great websites in several market fields. </p>
+      <p className=" text-sm sm:text-xl text-white w-[300px] pb-8 ">since 2019, I have helped many clients build great websites in several market fields. </p>
     </div>
   )
 }
