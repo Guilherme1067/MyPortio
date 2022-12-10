@@ -34,12 +34,11 @@ const jobs = [{
 function JobsInfo() {
   return (
     <div className="flex flex-col gap-10 sm:pt-24" >
-
       {jobs.map(job => {
         return (
-          <div key={job.name} className="flex flex-col gap-6 pb-6 md:flex-row border-solid border-b-[0.5px] border-white md:items-center border-border-gray md:pb-10 md:gap-20 ">
+          <div key={job.name} className="flex flex-col gap-6 pb-6 md:flex-row border-solid border-b-[0.5px] border-white md:items-center border-border-gray md:pb-10 md:gap-20 sm:w-auto w-[100vw] justify-center items-center">
             <span className="text-white text-sm sm:text-base">{job.period}</span>
-            <div >
+            <div className="flex flex-col gap-1 items-center " >
               <p translate="no" className="text-white text-[28px]  sm:text-[40px]">{job.name}</p>
               <span translate="no" className="text-white text-sm sm:text-base">{job.title}</span>
             </div>
@@ -52,7 +51,7 @@ function JobsInfo() {
 
 function ExperiencesContainer({ children }: ExperienceContainerProps) {
   return (
-    <div id="Experiences" className=" bg-black-dark pl-[30px] sm:pl-11 width-[100vw] ">
+    <div id="Experiences" className=" bg-black-dark  width-[100vw] ">
       <div className=" flex flex-col">
         <div className=" flex flex-col sm:flex-row justify-between pr-44">
           {children}
@@ -64,7 +63,7 @@ function ExperiencesContainer({ children }: ExperienceContainerProps) {
 
 function ExperienceDescription() {
   return (
-    <div className="flex gap-2 flex-col pt-16 sm:pt-24">
+    <div className="flex gap-2 flex-col pt-16 sm:pt-24 pl-[30px] sm:pl-11">
       <h1 className="jobs text-[28px] sm:text-3xl font-bold ">EXPERIENCES</h1>
       <p className=" text-sm sm:text-xl text-white w-[300px] pb-8 ">since 2019, I have helped many clients build great websites in several market fields. </p>
     </div>
