@@ -1,6 +1,8 @@
 import linkedinIcon from '../assets/linkedin.svg'
 import githubIcon from '../assets/github.svg'
 import facebookIcon from '../assets/facebook.svg'
+import menu from '/assets/icons/menu.svg'
+
 import { ReactNode } from 'react';
 
 interface HeaderContainerProps {
@@ -34,10 +36,15 @@ function HeaderLeftSide() {
 
 function HeaderSocialMediaIcons() {
   return (
-    <ul className="flex gap-6">
-      <li><a href="https://www.linkedin.com/in/guireiss/" target="_blank"><img title="Link para o linkedin (link externo)" src={linkedinIcon} alt="linkedin logo" /></a></li>
-      <li><a href="https://github.com/Guilherme1067" target="_blank"><img title="Link para o github (link externo)" alt="github logo" src={githubIcon} /></a></li>
-      <li><a href="https://www.instagram.com/guilhermedrs_/" target="_blank"><img title="Link para o instagram (link externo)" src={facebookIcon} alt="instagram logo" /></a></li>
+    <ul className="flex items-center sm:flex sm:gap-6">
+      <li className='group '>
+        <img className="md:hidden inline cursor-pointer" src={menu} />
+        <a className="hidden md:inline" href="https://www.linkedin.com/in/guireiss/" target="_blank">
+          <img title="Link para o linkedin (link externo)" src={linkedinIcon} alt="linkedin logo" />
+        </a>
+      </li>
+      <li><a className="hidden md:inline" href="https://github.com/Guilherme1067" target="_blank"><img title="Link para o github (link externo)" alt="github logo" src={githubIcon} /></a></li>
+      <li><a className="hidden md:inline" href="https://www.instagram.com/guilhermedrs_/" target="_blank"><img title="Link para o instagram (link externo)" src={facebookIcon} alt="instagram logo" /></a></li>
     </ul>
   )
 }

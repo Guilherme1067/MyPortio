@@ -22,10 +22,23 @@ module.exports = {
           '0%': {opacity: 0},
           '100%': {opacity: 1},
 
+        },
+
+        fillBoxBackGround: {
+          '0%': {
+            width: 0,
+            height: 0
+          },
+          '100%': {
+            width: "100%",
+            height: "100%",
+          },
+
         }
       },
       animation: {
         show: 'show 4s ease-in-out forwards',
+        fillBoxBackGround: 'fillBoxBackGround 2s ease-in-out forwards'
       }
     },
   },
