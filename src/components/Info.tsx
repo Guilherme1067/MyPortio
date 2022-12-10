@@ -35,23 +35,23 @@ function DescriptionContainer({ children }: InfoContainerProps) {
 }
 
 function Description() {
-  return <p className=' text-white mt-12 sm:mt-0'>Hello, I am a front-end developer and problem solver <br /> with four years of experience working from Brazil.
-    I <br /> aim to create high quality, responsive websites and <br />plataforms that offers the best experience. </p>
+  return <p className=' text-white w-[316px] sm:w-[628px] mt-12 sm:mt-0 text-sm sm:text-base '>Hello, I am a front-end developer and problem solver  with four years of experience working from Brazil.
+    I aim to create high quality, responsive websites and plataforms that offers the best experience. </p>
 
 }
 function Education() {
   return (
-    <div className='flex gap-11  sm:gap-16 sm:flex-row'>
+    <div className='flex gap-11 sm:gap-16 sm:flex-row '>
       <div className='flex flex-col gap-4'>
         <p className='text-yellow font-bold'>EDUCATION</p>
-        <p className='text-white'>Computer Science</p>
+        <p className='text-white text-sm sm:text-base'>Computer Science</p>
         <p className='text-white'>FUMEC University</p>
       </div>
 
       <div className='flex flex-col gap-4'>
         <p className='text-yellow font-bold'>TECHNOLOGIES</p>
-        <p className='text-white'>Javascript</p>
-        <p className='text-white'>React JS</p>
+        <p className='text-white text-sm sm:text-base'>Javascript</p>
+        <p className='text-white text-sm sm:text-base'>React JS</p>
       </div>
     </div>
   )

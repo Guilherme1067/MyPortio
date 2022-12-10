@@ -38,10 +38,10 @@ function JobsInfo() {
       {jobs.map(job => {
         return (
           <div className="flex flex-row  border-solid border-b-[0.5px] border-white items-center border-border-gray pb-10 gap-20 ">
-            <span className="text-white">{job.period}</span>
+            <span className="text-white text-sm sm:text-base">{job.period}</span>
             <div >
-              <p className="text-white text-[40px]">{job.name}</p>
-              <span className="text-white">{job.title}</span>
+              <p className="text-white text-[28px]  sm:text-[40px]">{job.name}</p>
+              <span className="text-white text-sm sm:text-base">{job.title}</span>
             </div>
           </div>
         )
@@ -52,7 +52,7 @@ function JobsInfo() {
 
 function ExperiencesContainer({ children }: ExperienceContainerProps) {
   return (
-    <div id="Experiences" className=" bg-black-dark pl-0 sm:pl-44 width-[100vw] ">
+    <div id="Experiences" className=" bg-black-dark pl-[30px] sm:pl-11 width-[100vw] ">
       <div className=" flex flex-col">
         <div className=" flex flex-col sm:flex-row justify-between pr-44">
           {children}
@@ -65,8 +65,8 @@ function ExperiencesContainer({ children }: ExperienceContainerProps) {
 function ExperienceDescription() {
   return (
     <div className="flex gap-2 flex-col pt-16 sm:pt-24">
-      <h1 className="jobs text-3xl font-bold">EXPERIENCES</h1>
-      <p className="text-xl text-white">since 2019, I have helped <br /> many clients build great <br />websites in several<br /> market fields. </p>
+      <h1 className="jobs text-[28px] sm:text-3xl font-bold ">EXPERIENCES</h1>
+      <p className=" text-sm sm:text-xl text-white">since 2019, I have helped <br /> many clients build great <br />websites in several<br /> market fields. </p>
     </div>
   )
 }

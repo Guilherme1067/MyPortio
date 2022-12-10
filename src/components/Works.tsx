@@ -35,8 +35,8 @@ function LeftSideProjectBox({ src, number, name, description, link }: ProjectBox
       <span className='absolute left-[60px] top-[48px] font-extrabold text-5xl jobs'>{number}</span>
       <div className='relative  top-[134px] left-[32px] sm:left-[498px] md:top-[100px]  flex flex-col gap-2'>
         <p className='font-bold text-[20px] sm:text-[40px] max-w-[250px] sm:max-w-[360px] text-white '>{name}</p>
-        <span className='text-base max-w-[345px] text-white '>{description}</span>
-        <a href="#" className='text-yellow text-base font-medium'>See project</a>
+        <span className='text-sm sm:text-base max-w-[345px] text-white '>{description}</span>
+        <a href="#" className='text-yellow text-sm sm:text-base font-medium'>See project</a>
       </div>
     </div>
   )
@@ -44,16 +44,15 @@ function LeftSideProjectBox({ src, number, name, description, link }: ProjectBox
 
 function WorksContainer({ children }: WorksContainerProps) {
   return (
-    <div id="Works" className='flex flex-col mb-16 gap-12 md:pt-20 md:px-44 sm:p-0  '>
+    <div id="Works" className='flex flex-col mb-16 gap-12 pt-16 sm:pt-20 md:px-44 sm:p-0 items sm:pl-0 pl-[30px] '>
       {children}
     </div>
   )
 }
 
 function SectionTitle() {
-  return <p className='jobs font-extrabold text-2xl'>SELECTED WORK</p>
+  return <p className='jobs font-extrabold text-2xl sm:text-2xl'>SELECTED WORK</p>
 }
-
 export function Works() {
   return (
     <WorksContainer >
