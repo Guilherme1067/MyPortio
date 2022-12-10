@@ -7,7 +7,7 @@ interface ContactMeContainer {
 
 function ContactMeContainer({ children }: ContactMeContainer) {
   return (
-    <div id="Contact me" className="bg-black-dark flex flex-col gap-10 border-b-[0.5px] border-border-gray pb-[68px] mb-[84px] pt-32 pl-[30px] sm:pl-11 ">
+    <div id="Contact me" className="bg-black-dark flex flex-col gap-10 border-b-[0.5px] border-border-gray pb-[68px] pt-32 pl-[30px] sm:pl-11 ">
       {children}
     </div>
   )
