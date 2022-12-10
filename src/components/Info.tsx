@@ -20,28 +20,28 @@ function InfoContainer({ children }: InfoContainerProps) {
 function PhotoAndTitle() {
   return (
     <>
-      <img className="md:w-[418px] md:h-[418px] w-[220px] h-[220px] rounded-full mt-7" src={mySelf} />
-      <p className=" absolute top-[420px] info text-[48px] md:text-[7.5rem] font-extrabold after:content-['DEVELOPER'] after:text-white">FRONTEND</p>
+      <img className="sm:w-[418px] sm:h-[418px] w-[220px] h-[220px] rounded-full mt-7" src={mySelf} />
+      <p className=" absolute top-[270px] sm:top-[420px]  info text-[48px] sm:text-[7.5rem] font-extrabold after:flex sm:flex after:content-['DEVELOPER'] after:text-white">FRONTEND</p>
     </>
   )
 }
 
 function DescriptionContainer({ children }: InfoContainerProps) {
   return (
-    <div className=' pt-14 flex md:flex-row flex-col md:gap-60 gap-10 '>
+    <div className=' pt-14 flex sm:flex-row flex-col sm:gap-60 gap-12 '>
       {children}
     </div>
   )
 }
 
 function Description() {
-  return <p className=' text-white '>Hello, I am a front-end developer and problem solver <br /> with four years of experience working from Brazil.
+  return <p className=' text-white mt-12 sm:mt-0'>Hello, I am a front-end developer and problem solver <br /> with four years of experience working from Brazil.
     I <br /> aim to create high quality, responsive websites and <br />plataforms that offers the best experience. </p>
 
 }
 function Education() {
   return (
-    <div className='flex flex-col gap-5 md:gap-16 md:flex-row'>
+    <div className='flex gap-11  sm:gap-16 sm:flex-row'>
       <div className='flex flex-col gap-4'>
         <p className='text-yellow font-bold'>EDUCATION</p>
         <p className='text-white'>Computer Science</p>

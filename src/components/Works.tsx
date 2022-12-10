@@ -16,11 +16,11 @@ interface WorksContainerProps {
 
 function RightSideProjectBox({ src, number, name, description, link }: ProjectBox) {
   return (
-    <div className="hover:animate-pulse mb-12 relative w-[628px] h-[455px] md:w-[530px] md:h-[403px] border-[0.5px]  border-border-gray md:left-[50%]">
-      <img className='absolute top-[40px] md:right-[90px]' src={src} />
+    <div className="hover:animate-pulse mb-40 sm:mb-0 relative sm:w-[628px] sm:h-[455px] w-[254px] h-[191px] border-[0.5px]  border-border-gray md:left-[50%]">
+      <img className='absolute  top-[20px] left-[43px] sm:left-[-88px] sm:top-[40px] sm:right-[90px]' src={src} />
       <span className='absolute right-[60px] top-[48px] font-extrabold text-5xl jobs'>{number}</span>
-      <div className='relative top-[348px] left-[84px]top-[128px] md:top-[103px] right-[336px] flex flex-col gap-2'>
-        <p className='font-bold text-[40px] text-white max-w-[360px]'>{name}</p>
+      <div className='relative top-[134px] left-[32px] sm:top-[128px] sm:left-[-315px] flex flex-col gap-2'>
+        <p className='font-bold text-[20px] sm:text-[40px] max-w-[250px] sm:max-w-[360px] text-white'>{name}</p>
         <span className='text-base text-white'>{description}</span>
         <a href="" className='text-yellow text-base font-medium'>See project</a>
       </div>
@@ -30,12 +30,12 @@ function RightSideProjectBox({ src, number, name, description, link }: ProjectBo
 
 function LeftSideProjectBox({ src, number, name, description, link }: ProjectBox) {
   return (
-    <div className="hover:animate-pulse relative w-[628px] h-[455px] md:w-[530px] md:h-[403px] border-[0.5px]  border-border-gray ">
-      <img className='absolute top-[40px] left-[90px]' src={src} />
+    <div className="mb-40 sm:mb-0 hover:animate-pulse relative sm:w-[628px] sm:h-[455px] w-[254px] h-[191px] border-[0.5px]  border-border-gray ">
+      <img className='absolute top-[20px] sm:top-[40px] left-[43px] sm:left-[90px]' src={src} />
       <span className='absolute left-[60px] top-[48px] font-extrabold text-5xl jobs'>{number}</span>
-      <div className='relative top-[348px] left-[84px] md:left-[498px] md:top-[100px]  flex flex-col gap-2'>
-        <p className='font-bold text-[40px] text-white '>{name}</p>
-        <span className='text-base text-white '>{description}</span>
+      <div className='relative  top-[134px] left-[32px] sm:left-[498px] md:top-[100px]  flex flex-col gap-2'>
+        <p className='font-bold text-[20px] sm:text-[40px] max-w-[250px] sm:max-w-[360px] text-white '>{name}</p>
+        <span className='text-base max-w-[345px] text-white '>{description}</span>
         <a href="#" className='text-yellow text-base font-medium'>See project</a>
       </div>
     </div>
@@ -44,7 +44,7 @@ function LeftSideProjectBox({ src, number, name, description, link }: ProjectBox
 
 function WorksContainer({ children }: WorksContainerProps) {
   return (
-    <div id="Works" className='flex flex-col gap-12 md:pt-20 md:px-44 sm:p-0  '>
+    <div id="Works" className='flex flex-col mb-16 gap-12 md:pt-20 md:px-44 sm:p-0  '>
       {children}
     </div>
   )

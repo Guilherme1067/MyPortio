@@ -8,7 +8,7 @@ import { Works } from "./components/Works"
 function App() {
 
   return (
-    <div className="font-body animate-show">
+    <div className="font-body animate-show ">
       <Header />
       <Info />
       <Works />

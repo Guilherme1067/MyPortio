@@ -12,7 +12,7 @@ interface HeaderContainerProps {
 const arrayOfLinks = ["About", "Works", "Experiences", "Contact me"]
 function NavLinks() {
   return (
-    <nav className="text-base text-white flex gap-12">
+    <nav className="hidden sm:flex text-base text-white  gap-12">
       {arrayOfLinks.map(link => {
         return (
           <div className='hover:border-b-[2px] rounded-sm hover:animate-pulse border-yellow '>
@@ -38,7 +38,7 @@ function HeaderSocialMediaIcons() {
   return (
     <ul className="flex items-center sm:flex sm:gap-6">
       <li className='group '>
-        <img className="md:hidden inline cursor-pointer" src={menu} />
+        <img className="inline sm:hidden cursor-pointer" src={menu} />
         <a className="hidden md:inline" href="https://www.linkedin.com/in/guireiss/" target="_blank">
           <img title="Link para o linkedin (link externo)" src={linkedinIcon} alt="linkedin logo" />
         </a>
