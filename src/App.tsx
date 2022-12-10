@@ -9,7 +9,7 @@ import { Works } from "./components/Works"
 
 
 function App() {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(true);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   return (
     <div className="font-body animate-show ">
       {isMobileMenuOpen ? <MobileMenu setMenuStatus={setIsMobileMenuOpen} /> :
