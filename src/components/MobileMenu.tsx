@@ -12,7 +12,7 @@ interface MobileMenuProps {
 export function MobileMenu({ setMenuStatus }: MobileMenuProps) {
 
   return (
-    <div className='w-100vh h-[100vh] z-100000000000000000'>
+    <div className='animate-rollDown relative w-100vh h-[100vh] z-100000000000000000'>
       <div className='flex justify-between items-center px-8 py-8' >
         <div className="flex" >
           <p className="text-white font-bold font text-base">GUILHERME</p>

@@ -23,7 +23,12 @@ module.exports = {
           '100%': {opacity: 1},
 
         },
-
+          rollDown: {
+            '0%': {top: "-540px"},
+            '25%': {top: 0},
+            '50%': {top: "-20px"},
+            '100%': {top: 0},
+          },
         fillBoxBackGround: {
           '0%': {
             width: 0,
@@ -38,6 +43,7 @@ module.exports = {
       },
       animation: {
         show: 'show 4s ease-in-out forwards',
+        rollDown: 'rollDown 1.5s ease-in-out forwards',
         fillBoxBackGround: 'fillBoxBackGround 2s ease-in-out forwards'
       }
     },
