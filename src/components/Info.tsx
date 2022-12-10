@@ -5,6 +5,8 @@ interface InfoContainerProps {
   children: ReactNode;
 }
 
+const skills = ["Javascript", "React JS", "Accessibility", "Typescript"]
+
 function InfoContainer({ children }: InfoContainerProps) {
   return (<main id="About" className=' flex items-center justify-center '>
     <div className='rounded-full flex items-center justify-center'>
@@ -50,8 +52,11 @@ function Education() {
 
       <div className='flex flex-col gap-4'>
         <p className='text-yellow font-bold'>TECHNOLOGIES</p>
-        <p className='text-white text-sm sm:text-base'>Javascript</p>
-        <p className='text-white text-sm sm:text-base'>React JS</p>
+        {skills.map(skill => {
+          return (
+            <p key={skill} className='text-white text-sm sm:text-base'>{skill}</p>
+          )
+        })}
       </div>
     </div>
   )
