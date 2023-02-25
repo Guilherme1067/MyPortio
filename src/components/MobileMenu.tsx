@@ -2,7 +2,7 @@ import linkedinIcon from '../assets/linkedin.svg'
 import githubIcon from '../assets/github.svg'
 import facebookIcon from '../assets/facebook.svg'
 import x from '/assets/icons/x.svg'
-
+import ReactGA from 'react-ga';
 const arrayOfLinks = ["About", "Works", "Experiences", "Contact me"]
 
 interface MobileMenuProps {
@@ -24,8 +24,12 @@ export function MobileMenu({ setMenuStatus }: MobileMenuProps) {
       <nav className="flex flex-col items-center gap-12 text-base pt-12 text-white">
         {arrayOfLinks.map(link => {
           return (
-            <div key={link} className='flex hover:border-b-[2px] rounded-sm hover:animate-pulse border-yellow '>
-              <a onClick={() => setMenuStatus(false)} title={`Link to the ${link} section (internal link)`} href={`#${link}`}>{link}</a>
+            <div key={link} onClick={() => ReactGA.event({
+              category: link,
+              action: 'Clicked on header'
+            })} className='flex hover:border-b-[2px] rounded-sm hover:animate-pulse border-yellow '>
+              <a onClick={() => setMenuStatus(false)}
+                title={`Link to the ${link} section (internal link)`} href={`#${link}`}>{link}</a>
             </div>
           )
         })}

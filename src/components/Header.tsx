@@ -20,12 +20,10 @@ function NavLinks() {
     <nav className="hidden sm:flex text-base text-white  gap-12">
       {arrayOfLinks.map(link => {
         return (
-          <div key={link} className=' link-hover rounded-sm hover:animate-pulse border-yellow '>
-            <a onClick={() => ReactGA.event({
-              category: link,
-              action: 'Clicked on header'
-            })} title={`Link to the ${link} section (internal link)`} href={`#${link}`}>{link}</a>
-          </div>
+          <a key={link} className=' link-hover rounded-sm hover:animate-pulse border-yellow ' onClick={() => ReactGA.event({
+            category: link,
+            action: 'Clicked on header'
+          })} title={`Link to the ${link} section (internal link)`} href={`#${link}`}>{link}</a>
         )
       })}
 
@@ -41,8 +39,6 @@ function HeaderLeftSide() {
     </div>
   )
 }
-
-
 
 function HeaderSocialMediaIcons({ setMenuStatus }: MobileMenuProps) {
   return (
