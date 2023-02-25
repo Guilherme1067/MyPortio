@@ -26,7 +26,7 @@ function RightSideProjectBox({ src, number, name, description, link }: ProjectBo
       <div className='relative top-[134px] left-[32px] sm:top-[128px] sm:left-[-315px] flex flex-col gap-2'>
         <p className='font-bold text-[20px] sm:text-[40px] max-w-[250px] sm:max-w-[360px] text-white'>{name}</p>
         <span className='text-base text-white'>{description}</span>
-        <a href="" className='text-yellow text-base font-medium'>See project</a>
+        <a href="" className='link-hover text-yellow text-base font-medium w-[108px]'>See project</a>
       </div>
     </div>
   )
@@ -40,7 +40,7 @@ function LeftSideProjectBox({ src, number, name, description, link }: ProjectBox
       <div className='relative  top-[134px] left-[32px] sm:left-[498px] md:top-[100px]  flex flex-col gap-2'>
         <p className='font-bold text-[20px] sm:text-[40px] max-w-[250px] sm:max-w-[360px] text-white '>{name}</p>
         <span className='text-sm sm:text-base max-w-[345px] text-white '>{description}</span>
-        <a href="#" className='text-yellow text-sm sm:text-base font-medium'>See project</a>
+        <a href="#" className='text-yellow text-sm sm:text-base font-medium w-[108px] link-hover'>See project</a>
       </div>
     </div>
   )

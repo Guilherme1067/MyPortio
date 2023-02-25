@@ -36,7 +36,7 @@ const jobs = [{
 
 function JobsInfo() {
   return (
-    <div data-aos="slide-left" className="flex flex-col gap-10 sm:pt-24" >
+    <div data-aos="fade-left" className="flex flex-col gap-10 sm:pt-24" >
       {jobs.map(job => {
         return (
           <div key={job.name} className="flex flex-col gap-6 pb-6 md:flex-row border-solid border-b-[0.5px] border-white md:items-center border-border-gray md:pb-10 md:gap-20 sm:w-auto w-[100vw] justify-center items-center">
@@ -66,9 +66,9 @@ function ExperiencesContainer({ children }: ExperienceContainerProps) {
 
 function ExperienceDescription() {
   return (
-    <div data-aos="slide-right" className="flex gap-2 flex-col pt-16 sm:pt-24 pl-[30px] sm:pl-11">
+    <div data-aos="fade-right" className="flex gap-2 flex-col pt-16 sm:pt-24 pl-[30px] sm:pl-11">
       <h1 className="jobs text-[28px] sm:text-3xl font-bold ">EXPERIENCES</h1>
-      <p className=" text-sm sm:text-xl text-white w-[300px] pb-8 ">since 2019, I have helped many clients build great websites in several market fields. </p>
+      <p className=" text-sm sm:text-xl text-white w-[300px] pb-8 ">Since 2019, I have helped many clients build great websites in several market fields. </p>
     </div>
   )
 }
