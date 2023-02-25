@@ -6,8 +6,15 @@ import { Header } from "./components/Header"
 import { Info } from "./components/Info"
 import { MobileMenu } from "./components/MobileMenu"
 import { Works } from "./components/Works"
+import ReactGA from 'react-ga';
+
+const TRACKING_ID = 'UA-248541217-1'
+ReactGA.initialize(TRACKING_ID)
 
 function App() {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname)
+  }, [])
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   return (
     <div className="font-body animate-show ">

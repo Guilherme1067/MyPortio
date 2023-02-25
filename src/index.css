@@ -14,6 +14,14 @@ body {
   overflow-x: hidden;
 }
 
+body::-webkit-scrollbar {
+  width: 15px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid orange; /* creates padding around scroll thumb */
+}
 @layer components {
   .info {
     color: transparent;
@@ -26,4 +34,22 @@ body {
     -webkit-text-stroke-width: 0.06rem;
     -webkit-text-stroke-color: #dd9f00;
   }
+}
+
+.link-hover {
+  position: relative;
+  cursor: pointer;
+}
+
+.link-hover::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #dd9f00;
+  transition: width 0.5s ease-in-out;
+}
+.link-hover:hover::before {
+  width: 100%;
 }
