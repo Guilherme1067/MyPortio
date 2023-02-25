@@ -23,6 +23,10 @@ module.exports = {
           '100%': {opacity: 1},
 
         },
+        hide: {
+          opacity: 0,
+        },
+
           rollDown: {
             '0%': {top: "-540px"},
             '25%': {top: 0},

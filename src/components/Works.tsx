@@ -1,6 +1,8 @@
-import { ReactNode } from 'react'
+import { ReactNode, useEffect } from 'react'
 import notebook from '/assets/notebook.png'
 import project2 from '/assets/project2.png'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 type ProjectBox = {
   src: string;
@@ -15,8 +17,9 @@ interface WorksContainerProps {
 }
 
 function RightSideProjectBox({ src, number, name, description, link }: ProjectBox) {
+
   return (
-    <div className="hover:animate-pulse mb-40 sm:mb-0 relative sm:w-[628px] sm:h-[455px] w-[254px] h-[191px] border-[0.5px]  border-border-gray md:left-[50%]">
+    <div data-aos="flip-left" className="hover:animate-pulse mb-40 sm:mb-0 relative sm:w-[628px] sm:h-[455px] w-[254px] h-[191px] border-[0.5px]  border-border-gray md:left-[50%]">
       <img className='absolute top-[20px] left-[43px] sm:left-[-88px] sm:top-[40px] sm:right-[90px]' src={src} />
       <span className='absolute  right-[192px] top-[26px] sm:right-[30px] sm:top-[70px] font-extrabold text-2xl md:text-[80px] jobs'>{number}</span>
       <div className='relative top-[134px] left-[32px] sm:top-[128px] sm:left-[-315px] flex flex-col gap-2'>
@@ -30,7 +33,7 @@ function RightSideProjectBox({ src, number, name, description, link }: ProjectBo
 
 function LeftSideProjectBox({ src, number, name, description, link }: ProjectBox) {
   return (
-    <div className="mb-40 sm:mb-0 hover:animate-pulse relative sm:w-[628px] sm:h-[455px] w-[254px] h-[191px] border-[0.5px]  border-border-gray ">
+    <div data-aos="flip-right" className="mb-40 sm:mb-0 hover:animate-pulse relative sm:w-[628px] sm:h-[455px] w-[254px] h-[191px] border-[0.5px]  border-border-gray ">
       <img className='absolute top-[20px] sm:top-[40px] left-[43px] sm:left-[90px]' src={src} />
       <span className='absolute left-8 top-[26px] sm:left-[30px] sm:top-[75px] font-extrabold text-2xl md:text-[80px] jobs'>{number}</span>
       <div className='relative  top-[134px] left-[32px] sm:left-[498px] md:top-[100px]  flex flex-col gap-2'>
@@ -54,6 +57,9 @@ function SectionTitle() {
   return <p className='jobs font-extrabold text-2xl sm:text-2xl'>SELECTED WORK</p>
 }
 export function Works() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 })
+  })
   return (
     <WorksContainer >
       <SectionTitle />

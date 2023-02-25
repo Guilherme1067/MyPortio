@@ -6,12 +6,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Source Code Pro",
+  font-family: "Source Code Pro";
 }
 
 body {
   background: #171717;
-
+  overflow-x: hidden;
 }
 
 @layer components {
@@ -24,6 +24,6 @@ body {
   .jobs {
     color: transparent;
     -webkit-text-stroke-width: 0.06rem;
-    -webkit-text-stroke-color: #DD9F00;
+    -webkit-text-stroke-color: #dd9f00;
   }
 }

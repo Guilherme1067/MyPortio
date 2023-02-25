@@ -19,7 +19,7 @@ function NavLinks() {
     <nav className="hidden sm:flex text-base text-white  gap-12">
       {arrayOfLinks.map(link => {
         return (
-          <div key={link} className='hover:border-b-[2px] rounded-sm hover:animate-pulse border-yellow '>
+          <div key={link} className='before:content["teste"] rounded-sm hover:animate-pulse border-yellow '>
             <a title={`Link to the ${link} section (internal link)`} href={`#${link}`}>{link}</a>
           </div>
         )

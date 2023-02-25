@@ -1,5 +1,7 @@
-import { ReactNode } from 'react'
+import { ReactNode, useEffect } from 'react'
 import BackUpIcon from '/assets/icons/backUpIcon.svg'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 interface ContactMeContainer {
   children: ReactNode;
@@ -15,7 +17,7 @@ function ContactMeContainer({ children }: ContactMeContainer) {
 
 function ContactMeLeftSide() {
   return (
-    <div className="flex gap-2 flex-col">
+    <div data-aos="slide-right" className="flex gap-2 flex-col">
       < h1 className="jobs text-3xl font-bold" > CONTACT ME</h1 >
       <p className=" text-white text-sm sm:text-base">Have a project in mind? <br />Reach out to me anytime.</p>
     </div >
@@ -24,7 +26,7 @@ function ContactMeLeftSide() {
 
 function ContactMeRightSide() {
   return (
-    <div className="flex sm:flex-row flex-col sm:items-center  justify-between gap-12 ">
+    <div data-aos="slide-up" className="flex sm:flex-row flex-col sm:items-center  justify-between gap-12 ">
       <p className=" text-white sm:text-3xl text-xl" >guilherme1067@hotmail.com</p>
       <a href="#About" className="text-yellow hover:animate-pulse font-semibold flex gap-3 items-center cursor-pointer pr-0 sm:pr-40" title="Back to the Top(Icon to go back up to the first section of the page)" >
         Back to the top
@@ -35,6 +37,9 @@ function ContactMeRightSide() {
 }
 
 export function ContactMe() {
+  useEffect(() => {
+    AOS.init({ duration: 1000 })
+  }, [])
   return (
     <ContactMeContainer>
       <ContactMeLeftSide />
