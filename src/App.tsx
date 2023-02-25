@@ -8,7 +8,8 @@ import { MobileMenu } from "./components/MobileMenu"
 import { Works } from "./components/Works"
 import ReactGA from 'react-ga';
 
-ReactGA.initialize(import.meta.env.TRACK_ID)
+const TRACK_ID = "UA-248541217-1"
+ReactGA.initialize(TRACK_ID)
 
 function App() {
   useEffect(() => {

@@ -1,6 +1,7 @@
 import { ReactNode, useEffect } from "react"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ReactGA from 'react-ga';
 
 interface ExperienceContainerProps {
   children: ReactNode;
@@ -74,6 +75,7 @@ function ExperienceDescription() {
 export function Experiences() {
   useEffect(() => {
     AOS.init({ duration: 1000 })
+    ReactGA.pageview(window.location.pathname)
   }, [])
   return (
     <ExperiencesContainer>

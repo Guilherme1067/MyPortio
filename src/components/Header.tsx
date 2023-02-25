@@ -2,8 +2,9 @@ import linkedinIcon from '../assets/linkedin.svg'
 import githubIcon from '../assets/github.svg'
 import facebookIcon from '../assets/facebook.svg'
 import menu from '/assets/icons/menu.svg'
+import ReactGA from 'react-ga';
 
-import { ReactNode } from 'react';
+import React, { ReactNode } from 'react';
 
 interface HeaderContainerProps {
   children: ReactNode;
@@ -20,7 +21,10 @@ function NavLinks() {
       {arrayOfLinks.map(link => {
         return (
           <div key={link} className=' link-hover rounded-sm hover:animate-pulse border-yellow '>
-            <a title={`Link to the ${link} section (internal link)`} href={`#${link}`}>{link}</a>
+            <a onClick={() => ReactGA.event({
+              category: link,
+              action: 'Clicked on header'
+            })} title={`Link to the ${link} section (internal link)`} href={`#${link}`}>{link}</a>
           </div>
         )
       })}

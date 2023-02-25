@@ -3,6 +3,7 @@ import notebook from '/assets/notebook.png'
 import project2 from '/assets/project2.png'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import ReactGA from 'react-ga';
 
 type ProjectBox = {
   src: string;
@@ -59,7 +60,9 @@ function SectionTitle() {
 export function Works() {
   useEffect(() => {
     AOS.init({ duration: 1000 })
-  })
+    ReactGA.pageview(window.location.pathname)
+  }, [])
+
   return (
     <WorksContainer >
       <SectionTitle />

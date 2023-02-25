@@ -1,5 +1,6 @@
-import { ReactNode } from 'react';
+import { ReactNode, useEffect } from 'react';
 import mySelf from '/assets/itsme.jpg'
+import ReactGA from 'react-ga';
 
 interface InfoContainerProps {
   children: ReactNode;
@@ -62,6 +63,9 @@ function Education() {
   )
 }
 export function Info() {
+  useEffect(() => {
+    ReactGA.pageview(window.location.pathname)
+  }, [])
   return (
     <InfoContainer>
       <PhotoAndTitle />
