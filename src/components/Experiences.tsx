@@ -30,7 +30,7 @@ const jobs = [{
 {
   name: "LOCKEY",
   title: "WEB SOFTWARE DEVELOPER / DEVELOPER INTERN",
-  period: "Sep 2020 - Jul 2021"
+  period: "Sep 2019 - Sep 2020"
 }
 ]
 
