@@ -45,12 +45,12 @@ function HeaderSocialMediaIcons({ setMenuStatus }: MobileMenuProps) {
     <ul className="flex items-center sm:flex sm:gap-6">
       <li className='group '>
         <img onClick={() => setMenuStatus(true)} className="inline sm:hidden cursor-pointer" src={menu} />
-        <a title="Link to my linkeding perfil(external link)" className="hidden md:inline" href="https://www.linkedin.com/in/guireiss/" target="_blank">
+        <a aria-label="Link to my linkeding perfil(external link)" className="hidden md:inline" href="https://www.linkedin.com/in/guireiss/" target="_blank">
           <img src={linkedinIcon} alt="linkedin logo" />
         </a>
       </li>
-      <li><a title="Link to my github perfil(external link)" className="hidden md:inline" href="https://github.com/Guilherme1067" target="_blank"><img alt="github logo" src={githubIcon} /></a></li>
-      <li><a title="Link to my instagram perfil(external link)" className="hidden md:inline" href="https://www.instagram.com/guilhermedrs_/" target="_blank"><img src={facebookIcon} alt="instagram logo" /></a></li>
+      <li><a aria-label="Link to my github perfil(external link)" className="hidden md:inline" href="https://github.com/Guilherme1067" target="_blank"><img alt="github logo" src={githubIcon} /></a></li>
+      <li><a aria-label="Link to my instagram perfil(external link)" className="hidden md:inline" href="https://www.instagram.com/guilhermedrs_/" target="_blank"><img src={facebookIcon} alt="instagram logo" /></a></li>
     </ul>
   )
 }
