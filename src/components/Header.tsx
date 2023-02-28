@@ -23,7 +23,7 @@ function NavLinks() {
           <a key={link} className=' link-hover rounded-sm hover:animate-pulse border-yellow ' onClick={() => ReactGA.event({
             category: link,
             action: 'Clicked on header'
-          })} title={`Link to the ${link} section (internal link)`} href={`#${link}`}>{link}</a>
+          })} aria-label={`Link to the ${link} section (internal link)`} href={`#${link}`}>{link}</a>
         )
       })}
 
