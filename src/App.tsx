@@ -22,10 +22,6 @@ function App() {
       ) : (
         <>
           <Header setMenuStatus={setIsMobileMenuOpen} />
-          <meta property="og:title" content="Guilherme Reis portifólio" />
-          <meta property="og:description" content="Guilherme Reis portifólio" />
-          <meta property="og:image" content="/assets/itsme.jpg" />
-          <meta property="og:url" content="https://www.guireis.dev" />
           <Info />
           <Works />
           <Experiences />
